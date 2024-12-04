@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import es.ieslosmontecillos.componentes_weishihan.CampoTextoBoton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="319.0" prefWidth="328.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="es.ieslosmontecillos.appusotextoboton.AppUsoTextoBotonController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <FlowPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <CampoTextoBoton fx:id="campo1" buttonText="Guardar" onAction="#onClickButton">
+            <FlowPane.margin>
+               <Insets bottom="15.0" left="5.0" />
+            </FlowPane.margin>
+         </CampoTextoBoton>
+         <CampoTextoBoton fx:id="campo2" buttonText="Guardar" onAction="#onClickButton">
+            <FlowPane.margin>
+               <Insets left="5.0" />
+            </FlowPane.margin>
+         </CampoTextoBoton>
+      </children>
+   </FlowPane>
+    <Label fx:id="lbInfo" prefHeight="17.0" prefWidth="266.0"
+           text="Pulsa botón.. y muestra texto en esta etiqueta" />
+</VBox>
